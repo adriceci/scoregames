@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Indie Flower', cursive;
+    background-color: var(--background);
+    font-size: 1.25rem;
+}
+
+/* Remove arrows on input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Set outline on input */
+input:focus,
+input:focus-visible{
+    outline-color: var(--primary) !important;
+}
+
+:root{
+    --primary: #194E92;
+    --secondary: #cb3234;
+    --tertiary: #1e5945;
+
+    --background: #fcefd8;
+
+    --black: #000000;
+    --white: #fffffc;
+}
