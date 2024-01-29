@@ -46,6 +46,9 @@ function addScore(player) {
 }
 
 function reset() {
+    const confirm = window.confirm('Are you sure you want to reset the scoreboard?');
+
+    if (!confirm) return;
     localStorage.removeItem('players');
     players.value = [];
     location.reload();
